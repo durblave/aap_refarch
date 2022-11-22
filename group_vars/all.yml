@@ -166,57 +166,57 @@ controller_templates:
     survey_enabled: false
     survey_spec: {}
     state: present
-  # - name: 5.3_rhel_check_volumes_over_80%_disk_use
-  #   description: Ansible Managed
-  #   organization: Default
-  #   job_type: run
-  #   inventory: rhel_dev_inv
-  #   project: 00_UNIX_RHEL_USECASES
-  #   playbook: 5.3_rhel_check_volumes_over_80%_disk_use.yml
-  #   become_enabled: false
-  #   instance_groups:
-  #     - default
-  #   verbosity: 3
-  #   execution_environment: Default execution environment
-  #   credentials:
-  #     - rhel_dev_inv_cred
-  #   survey_enabled: false
-  #   survey_spec: {}
-  #   state: present  
-  # - name: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers
-  #   description: Ansible Managed
-  #   organization: Default
-  #   job_type: run
-  #   inventory: rhel_dev_inv
-  #   project: 00_UNIX_RHEL_USECASES
-  #   playbook: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers.yml
-  #   become_enabled: false
-  #   instance_groups:
-  #     - default
-  #   verbosity: 3
-  #   execution_environment: Default execution environment
-  #   credentials:
-  #     - rhel_dev_inv_cred
-  #   survey_enabled: false
-  #   survey_spec: {}
-  #   state: present  
-  # - name: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers
-  #   description: Ansible Managed
-  #   organization: Default
-  #   job_type: run
-  #   inventory: rhel_dev_inv
-  #   project: 00_UNIX_RHEL_USECASES
-  #   playbook: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers.yml
-  #   become_enabled: false
-  #   instance_groups:
-  #     - default
-  #   verbosity: 3
-  #   execution_environment: Default execution environment
-  #   credentials:
-  #     - rhel_dev_inv_cred
-  #   survey_enabled: false
-  #   survey_spec: {}
-  #   state: present  
+  - name: 5.3_rhel_check_volumes_over_80%_disk_use
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.3_rhel_check_volumes_over_80%_disk_use.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
   # - name: 5.6_rhel_patch_rhel_servers_with_new_packages
   #   description: Ansible Managed
   #   organization: Default
