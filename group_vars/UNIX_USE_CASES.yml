@@ -204,13 +204,133 @@ controller_templates:
   survey_enabled: false
   survey_spec: {}
   state: present    
-# - name: 5.2_rhel_ping
+- name: 5.14_clear_flexcubes_fron_end_application_logs
+  description: Ansible Managed
+  organization: Default
+  job_type: run
+  inventory: rhel_dev_inv
+  project: 00_UNIX_RHEL_USECASES
+  playbook: 5.14_clear_flexcubes_fron_end_application_logs.yml
+  become_enabled: false
+  instance_groups:
+    - default
+  verbosity: 3
+  execution_environment: Default execution environment
+  credentials:
+    - rhel_dev_inv_cred
+  survey_enabled: false
+  survey_spec: {}
+  state: present  
+# - name: 
 #   description: Ansible Managed
 #   organization: Default
 #   job_type: run
 #   inventory: rhel_dev_inv
 #   project: 00_UNIX_RHEL_USECASES
-#   playbook: 5.2_rhel_ping.yml
+#   playbook: .yml
+#   become_enabled: false
+#   instance_groups:
+#     - default
+#   verbosity: 3
+#   execution_environment: Default execution environment
+#   credentials:
+#     - rhel_dev_inv_cred
+#   survey_enabled: false
+#   survey_spec: {}
+#   state: present  
+# - name: 
+#   description: Ansible Managed
+#   organization: Default
+#   job_type: run
+#   inventory: rhel_dev_inv
+#   project: 00_UNIX_RHEL_USECASES
+#   playbook: .yml
+#   become_enabled: false
+#   instance_groups:
+#     - default
+#   verbosity: 3
+#   execution_environment: Default execution environment
+#   credentials:
+#     - rhel_dev_inv_cred
+#   survey_enabled: false
+#   survey_spec: {}
+#   state: present  
+# - name: 
+#   description: Ansible Managed
+#   organization: Default
+#   job_type: run
+#   inventory: rhel_dev_inv
+#   project: 00_UNIX_RHEL_USECASES
+#   playbook: .yml
+#   become_enabled: false
+#   instance_groups:
+#     - default
+#   verbosity: 3
+#   execution_environment: Default execution environment
+#   credentials:
+#     - rhel_dev_inv_cred
+#   survey_enabled: false
+#   survey_spec: {}
+#   state: present  
+# - name: 
+#   description: Ansible Managed
+#   organization: Default
+#   job_type: run
+#   inventory: rhel_dev_inv
+#   project: 00_UNIX_RHEL_USECASES
+#   playbook: .yml
+#   become_enabled: false
+#   instance_groups:
+#     - default
+#   verbosity: 3
+#   execution_environment: Default execution environment
+#   credentials:
+#     - rhel_dev_inv_cred
+#   survey_enabled: false
+#   survey_spec: {}
+#   state: present  
+# - name: 
+#   description: Ansible Managed
+#   organization: Default
+#   job_type: run
+#   inventory: rhel_dev_inv
+#   project: 00_UNIX_RHEL_USECASES
+#   playbook: .yml
+#   become_enabled: false
+#   instance_groups:
+#     - default
+#   verbosity: 3
+#   execution_environment: Default execution environment
+#   credentials:
+#     - rhel_dev_inv_cred
+#   survey_enabled: false
+#   survey_spec: {}
+#   state: present  
+# - name: 
+#   description: Ansible Managed
+#   organization: Default
+#   job_type: run
+#   inventory: rhel_dev_inv
+#   project: 00_UNIX_RHEL_USECASES
+#   playbook: .yml
+#   become_enabled: false
+#   instance_groups:
+#     - default
+#   verbosity: 3
+#   execution_environment: Default execution environment
+#   credentials:
+#     - rhel_dev_inv_cred
+#   survey_enabled: false
+#   survey_spec: {}
+#   state: present  
+
+# - name: 
+#   description: Ansible Managed
+#   organization: Default
+#   job_type: run
+#   inventory: rhel_dev_inv
+#   project: 00_UNIX_RHEL_USECASES
+#   playbook: .yml
 #   become_enabled: false
 #   instance_groups:
 #     - default
