@@ -19,8 +19,8 @@ controller_templates:
   execution_environment: eprocess_ee_vmware_001
   credentials:
     - vcenter_dev_cred
-  survey_enabled: false
-  survey_spec: {} #"{{ lookup( 'template', 'template_surveys/survey_4.3_add_new_disk_to_a_virtual_machine.yml') | from_yaml }}"
+  survey_enabled: true
+  survey_spec: "{{ lookup( 'template', 'template_surveys/survey_4.3_add_new_disk_to_a_virtual_machine.yml') | from_yaml }}"
   state: present
 
 - name: 4.4_increase_disk_space_of_virtual_machine
@@ -37,8 +37,8 @@ controller_templates:
   execution_environment: eprocess_ee_vmware_001
   credentials:
     - vcenter_dev_cred
-  survey_enabled: false
-  survey_spec: {} #"{{ lookup( 'template', 'template_surveys/survey_4.4_increase_disk_space_of_virtual_machine.yml') | from_yaml }}"
+  survey_enabled: true
+  survey_spec: "{{ lookup( 'template', 'template_surveys/survey_4.4_increase_disk_space_of_virtual_machine.yml') | from_yaml }}"
   state: present
 
 - name: 4.5_create_virtual_machine_from_a_template
