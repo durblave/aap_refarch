@@ -4,8 +4,6 @@ controller_user_accounts:
     is_superuser: false
     password: "redhat"
 
-
----
 controller_templates:
 - name: 4.3_add_new_disk_to_a_virtual_machine
   description: Ansible Managed
