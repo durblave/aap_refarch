@@ -8,6 +8,12 @@
     - awx.awx
     - redhat_cop.controller_configuration
 
+  pre_tasks:
+    - name: Include vars from controller_configs directory
+      include_vars:
+        dir: ./group_vars
+        # ignore_files: [controller_config.yml.template]
+        extensions: ["yml"]
   roles:
     - {role: settings, when: controller_settings is defined, tags: settings}
     - {role: organizations, when: controller_organizations is defined, tags: organizations}
