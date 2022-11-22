@@ -11,7 +11,7 @@ controller_templates:
   job_type: run
   inventory: 00_WINTEL_VMWARE_INV
   project: 01_WINTEL_VMWARE_USECASES
-  playbook: WINTEL - 4.3_add_new_disk_to_a_virtual_machine.yml
+  playbook: 4.3_add_new_disk_to_a_virtual_machine.yml
   become_enabled: false
   instance_groups:
     - default
