@@ -110,5 +110,5 @@ controller_templates:
   credentials:
     - vcenter_dev_cred
   survey_enabled: false
-  survey_spec: "{{ lookup( 'template', 'template_surveys/survey_4.8_create_snapshot_from_a_virtual_machine.yml') | from_yaml }}"
+  survey_spec: {} #"{{ lookup( 'template', 'template_surveys/survey_4.8_create_snapshot_from_a_virtual_machine.yml') | from_yaml }}"
   state: present
