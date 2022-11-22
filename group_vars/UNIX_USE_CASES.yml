@@ -1,311 +1,311 @@
 ---
 controller_templates:
-- name: 5.2_rhel_ping
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.2_rhel_ping.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present
-- name: 
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: .yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.3_rhel_check_volumes_over_80%_disk_use
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.3_rhel_check_volumes_over_80%_disk_use.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.6_rhel_patch_rhel_servers_with_new_packages
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.6_rhel_patch_rhel_servers_with_new_packages.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.8_rhel_create_nfs_share
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.8_rhel_create_nfs_share.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.8_rhel_create_samba
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.8_rhel_create_samba.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.9_rhel_java_installation_for_WebLogic_servers
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.9_rhel_java_installation_for_WebLogic_servers.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present              
-- name: 5.11_obdx_clearing_old_logs_in_odbx_log_domain_server_logs
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.11_obdx_clearing_old_logs_in_odbx_log_domain_server_logs.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.12_flexcubes_weblogic_logs_management_and_archiving
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.12_flexcubes_weblogic_logs_management_and_archiving.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present      
-- name: 5.13_clear_fleod_reports_for_space_checks
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.13_clear_fleod_reports_for_space_checks.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present    
-- name: 5.14_clear_flexcubes_fron_end_application_logs
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.14_clear_flexcubes_fron_end_application_logs.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.15_clear_flexcubes_backend_application_logs
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.15_clear_flexcubes_backend_application_logs.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.16_clear_flexcubes_upload_progress_logs
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.16_clear_flexcubes_upload_progress_logs.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.17_manage_weblogic_server_logs_for_mfa
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.17_manage_weblogic_server_logs_for_mfa.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.19_archiving_of_weblogic_logs
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.19_archiving_of_weblogic_logs.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
-- name: 5.20_archiving_of_webserver_access_and_error_logs
-  description: Ansible Managed
-  organization: Default
-  job_type: run
-  inventory: rhel_dev_inv
-  project: 00_UNIX_RHEL_USECASES
-  playbook: 5.20_archiving_of_webserver_access_and_error_logs.yml
-  become_enabled: false
-  instance_groups:
-    - default
-  verbosity: 3
-  execution_environment: Default execution environment
-  credentials:
-    - rhel_dev_inv_cred
-  survey_enabled: false
-  survey_spec: {}
-  state: present  
+  - name: 5.2_rhel_ping
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.2_rhel_ping.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present
+  - name: 
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: .yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.3_rhel_check_volumes_over_80%_disk_use
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.3_rhel_check_volumes_over_80%_disk_use.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.4_rhel_install_and_restart_snmpd_service_on_on_rhel_servers.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.6_rhel_patch_rhel_servers_with_new_packages
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.6_rhel_patch_rhel_servers_with_new_packages.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.8_rhel_create_nfs_share
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.8_rhel_create_nfs_share.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.8_rhel_create_samba
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.8_rhel_create_samba.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.9_rhel_java_installation_for_WebLogic_servers
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.9_rhel_java_installation_for_WebLogic_servers.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present              
+  - name: 5.11_obdx_clearing_old_logs_in_odbx_log_domain_server_logs
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.11_obdx_clearing_old_logs_in_odbx_log_domain_server_logs.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.12_flexcubes_weblogic_logs_management_and_archiving
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.12_flexcubes_weblogic_logs_management_and_archiving.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present      
+  - name: 5.13_clear_fleod_reports_for_space_checks
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.13_clear_fleod_reports_for_space_checks.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present    
+  - name: 5.14_clear_flexcubes_fron_end_application_logs
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.14_clear_flexcubes_fron_end_application_logs.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.15_clear_flexcubes_backend_application_logs
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.15_clear_flexcubes_backend_application_logs.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.16_clear_flexcubes_upload_progress_logs
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.16_clear_flexcubes_upload_progress_logs.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.17_manage_weblogic_server_logs_for_mfa
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.17_manage_weblogic_server_logs_for_mfa.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.19_archiving_of_weblogic_logs
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.19_archiving_of_weblogic_logs.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
+  - name: 5.20_archiving_of_webserver_access_and_error_logs
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.20_archiving_of_webserver_access_and_error_logs.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: {}
+    state: present  
 # - name: 
 #   description: Ansible Managed
 #   organization: Default
