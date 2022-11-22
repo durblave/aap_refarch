@@ -20,7 +20,7 @@ controller_templates:
   credentials:
     - vcenter_dev_cred
   survey_enabled: false
-  survey_spec: "{{ lookup( 'template', 'template_surveys/survey_4.3_add_new_disk_to_a_virtual_machine.yml') | from_yaml }}"
+  survey_spec: {} #"{{ lookup( 'template', 'template_surveys/survey_4.3_add_new_disk_to_a_virtual_machine.yml') | from_yaml }}"
   state: present
 
 # - name: 4.4_increase_disk_space_of_virtual_machine
