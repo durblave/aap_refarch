@@ -341,25 +341,3 @@ controller_templates:
 #   survey_enabled: false
 #   survey_spec: {}
 #   state: present  
-# 5.3_rhel_check_volumes_over_80%_disk_use
-# 
-# 5.5_rhel_install_and_restart_mdatp_on_all_rhel_servers
-# 
-# 5.8_rhel_create_nfs_share
-# 5.8_rhel_create_samba
-# 
-# 
-# 
-# 
-# 5.14_clear_flexcubes_fron_end_application_logs
-# 
-# 
-# 
-# 
-# 5.20_archiving_of_webserver_access_and_error_logs
-
-
-
-
-
-
