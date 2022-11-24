@@ -18,7 +18,7 @@ spec:
     question_name: "NFS Share Group"
     question_description: "NFS Share Group"
     variable: nfs_share_group
-    required: true
+    required: true 
     default: ""    
   - type: multiplechoice
     question_name: "NFS Share Permissions"
@@ -29,3 +29,4 @@ spec:
     choices:
      - ro
      - rw
+     - rw,no_root_squash
