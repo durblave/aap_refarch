@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    #controller_validate_certs: false
+    controller_validate_certs: false
   collections:
     - awx.awx
     - redhat_cop.controller_configuration
@@ -12,7 +12,7 @@
     - name: Include vars from controller_configs directory
       include_vars:
         dir: ./group_vars
-        # ignore_files: [controller_config.yml.template]
+        ignore_files: [.gitkeep]
         extensions: ["yml"]
   roles:
     - {role: settings, when: controller_settings is defined, tags: settings}
