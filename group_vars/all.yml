@@ -249,7 +249,7 @@ controller_templates:
     credentials:
       - rhel_dev_inv_cred
     survey_enabled: true
-    survey_spec: survey_5.7_reset_user_accounts_on_red_hat_identity_manager.yml
+    survey_spec: "{{ lookup( 'template', 'template_surveys/survey_5.7_reset_user_accounts_on_red_hat_identity_manager.yml') | from_yaml }}"
     state: present      
   - name: 5.8_rhel_create_nfs_share
     description: Ansible Managed
