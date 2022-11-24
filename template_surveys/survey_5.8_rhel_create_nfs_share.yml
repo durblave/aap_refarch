@@ -1,22 +1,31 @@
 ---
-name: 4.8_create_snapshot_from_a_virtual_machine-Survey
-description: 4.8_create_snapshot_from_a_virtual_machine-Survey
+name: 5.8_rhel_create_nfs_share-Survey
+description: 5.8_rhel_create_nfs_share-Survey
 spec:
   - type: text
-    question_name: "Enter Virtual Machine Name"
-    question_description: "Name of virtual machine to create snapshot from"
-    variable: vm_name
+    question_name: "Enter NFS Share Path"
+    question_description: "Enter NFS Share Path"
+    variable: nfs_share_directory_path
     required: true
-    default: ""
+    default: 
   - type: text
-    question_name: "Enter Datacenter"
-    question_description: "Destination datacenter for the deploy operation."
-    variable: vm_datacenter
+    question_name: "Enter NFS Share Owner"
+    question_description: "Enter NFS Share Owner"
+    variable: nfs_share_owner
     required: true
-    default: ""
+    default: 
   - type: text
-    question_name: "Enter virtual machine folder"
-    question_description: "Destination folder, absolute or relative path to find an existing guest."
-    variable: vm_folder
+    question_name: "NFS Share Group"
+    question_description: "NFS Share Group"
+    variable: nfs_share_group
     required: true
-    default: ""
+    default: ""    
+  - type: multiplechoice
+    question_name: "NFS Share Permissions"
+    question_description: "NFS Share Permissions"
+    variable: nfs_share_permissions
+    required: true
+    default: ro
+    choices:
+     - ro
+     - rw

@@ -265,7 +265,7 @@ controller_templates:
     execution_environment: Default execution environment
     credentials:
       - rhel_dev_inv_cred
-    survey_enabled: false
+    survey_enabled: true
     survey_spec: {}
     state: present  
   - name: 5.8_rhel_create_samba
