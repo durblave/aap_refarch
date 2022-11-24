@@ -262,7 +262,7 @@ controller_templates:
     instance_groups:
       - default
     verbosity: 3
-    execution_environment: Default execution environment
+    execution_environment: eprocess_ee_all_001
     credentials:
       - rhel_dev_inv_cred
     survey_enabled: true
