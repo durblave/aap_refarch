@@ -234,6 +234,23 @@ controller_templates:
     survey_enabled: false
     survey_spec: {}
     state: present  
+  - name: 5.7_reset_user_accounts_on_red_hat_identity_manager
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 5.7_reset_user_accounts_on_red_hat_identity_manager.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: true
+    survey_spec: survey_5.7_reset_user_accounts_on_red_hat_identity_manager.yml
+    state: present      
   - name: 5.8_rhel_create_nfs_share
     description: Ansible Managed
     organization: Default
