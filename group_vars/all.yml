@@ -454,4 +454,23 @@ controller_templates:
       - rhel_dev_inv_cred
     survey_enabled: false
     survey_spec: {}
-    state: present  
+    state: present    
+  - name: 8.1_swig_restart_and_switch_ucp_gateways
+    description: Ansible Managed
+    organization: Default
+    job_type: run
+    inventory: rhel_dev_inv
+    project: 00_UNIX_RHEL_USECASES
+    playbook: 8.1_swig_restart_and_switch_ucp_gateways.yml
+    become_enabled: false
+    instance_groups:
+      - default
+    verbosity: 3
+    execution_environment: Default execution environment
+    credentials:
+      - rhel_dev_inv_cred
+    survey_enabled: false
+    survey_spec: "{{ lookup( 'template', 'template_surveys/survey_8.1_swig_restart_and_switch_ucp_gateways.yml') | from_yaml }}"
+    state: present
+
+    
