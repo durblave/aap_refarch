@@ -266,7 +266,7 @@ controller_templates:
     credentials:
       - rhel_dev_inv_cred
     survey_enabled: true
-    survey_spec: {}
+    survey_spec: "{{ lookup( 'template', 'template_surveys/survey_5.8_rhel_create_nfs_share.yml') | from_yaml }}"
     state: present  
   - name: 5.8_rhel_create_samba
     description: Ansible Managed
@@ -283,7 +283,7 @@ controller_templates:
     credentials:
       - rhel_dev_inv_cred
     survey_enabled: false
-    survey_spec: {}
+    survey_spec: "{{ lookup( 'template', 'template_surveys/survey_5.8_rhel_create_samba.yml') | from_yaml }}"
     state: present  
   - name: 5.9_rhel_java_installation_for_WebLogic_servers
     description: Ansible Managed
