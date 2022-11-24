@@ -35,8 +35,8 @@ spec:
     question_description: "NFS Clients IP Addresses"
     variable: nfs_client_list
     required: true
-    default: 172.22.152.153
+    default: 172.22.152.151,172.22.144.67,11.22.33.44
     choices:
-     - 172.22.152.151
+     - 172.22.152.151,172.22.144.67,11.22.33.44
      - 172.22.152.152
      - 172.22.152.153
