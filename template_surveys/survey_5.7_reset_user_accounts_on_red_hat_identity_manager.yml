@@ -1,0 +1,10 @@
+---
+name: 5.7_reset_user_accounts_on_red_hat_identity_manager-Survey
+description: 5.7_reset_user_accounts_on_red_hat_identity_manager-Survey
+spec:
+  - type: text
+    question_name: "Enter username to reset account"
+    question_description: "username of the account to reset password"
+    variable: user
+    required: true
+    default: ""
