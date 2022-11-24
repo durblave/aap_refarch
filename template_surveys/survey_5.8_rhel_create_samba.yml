@@ -1,22 +1,58 @@
 ---
-name: 4.8_create_snapshot_from_a_virtual_machine-Survey
-description: 4.8_create_snapshot_from_a_virtual_machine-Survey
+name:  5.8 - Create Samba Share - Survey
+description:  5.8 - Create NSambaShare - Survey
 spec:
   - type: text
-    question_name: "Enter Virtual Machine Name"
-    question_description: "Name of virtual machine to create snapshot from"
-    variable: vm_name
+    question_name: "Enter path of the Samba share"
+    question_description: "Path of the Samba share"
+    variable: smb_share_directory_path
     required: true
     default: ""
+  - type: multiplechoice
+    question_name: "Are guests allowed to the share"
+    question_description: "SMB guest permissions"
+    variable: smb_guest_allowed
+    required: true
+    choices:
+      - "yes"
+      - "no"
+    default: "no"             
+  - type: multiplechoice
+    question_name: "Is the samba share read only"
+    question_description: "SMB general permissions"
+    variable: smb_share_read_only
+    required: true
+    choices:
+      - "yes"
+      - "no"
+    default: "no"      
   - type: text
-    question_name: "Enter Datacenter"
-    question_description: "Destination datacenter for the deploy operation."
-    variable: vm_datacenter
+    question_name: "Enter samba share comment"
+    question_description: "Share comment"
+    variable: smb_share_comment
     required: true
-    default: ""
+    default: "Test comment"
   - type: text
-    question_name: "Enter virtual machine folder"
-    question_description: "Destination folder, absolute or relative path to find an existing guest."
-    variable: vm_folder
+    question_name: "Enter username owning the share"
+    question_description: "Username of the Samba share owner"
+    variable: nfs_share_owner
     required: true
-    default: ""
+    default: "test_user"    
+  - type: text
+    question_name: "Enter username owning the share"
+    question_description: "Username of the Samba share owner"
+    variable: nfs_share_group
+    required: true
+    default: "test_group"
+  - type: text
+    question_name: "Enter list of allowed users (comma seperated)"
+    question_description: "list of samba valid users"
+    variable: smb_valid_users
+    required: true
+    default: "test1,test2"     
+  - type: text
+    question_name: "Enter list of write users (comma seperated)"
+    question_description: "list of samba write users"
+    variable: smb_share_write_list
+    required: true
+    default: "test1,test2"               

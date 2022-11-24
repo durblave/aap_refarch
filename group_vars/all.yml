@@ -268,7 +268,7 @@ controller_templates:
     survey_enabled: true
     survey_spec: "{{ lookup( 'template', 'template_surveys/survey_5.8_rhel_create_nfs_share.yml') | from_yaml }}"
     state: present  
-  - name: 5.8_rhel_create_samba
+  - name: 5.8_rhel_create_samba_share
     description: Ansible Managed
     organization: Default
     job_type: run
